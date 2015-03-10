@@ -1,11 +1,17 @@
 @charset "utf-8";
 
+
+
 #main {
     width: 790/1366*100%;
     margin: 0 auto;
     height: 100%;
     position: relative;
     
+    ul, #timeline {
+        @include animation(opacity, 2s, ease);
+    }
+
     ul {
         width: 90%;
         padding-top: 120px;
@@ -38,8 +44,9 @@
     }
 
     .date {
-        left: -36px;
+        left: -57px;
         margin-top: 50px;
+        font: bold 16px/1.0 "微软雅黑", sans-serif;
         color: #4da76f;
     }
     

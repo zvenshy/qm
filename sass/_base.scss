@@ -13,6 +13,18 @@ body {
     border-radius: $px;
 }
 
+@mixin rotateY($deg) {
+    -webkit-transform: rotateY($deg);
+    -moz-transform: rotateY($deg);
+    transform: rotateY($deg);
+}
+
+@mixin animation($name, $time, $func) {
+    -webkit-animation: $name $time $func;
+    -moz-animation: $name $time $func;
+    animation: $name $time $func;
+}
+
 .fl {
     float: left;
 }
@@ -28,4 +40,33 @@ body {
     min-height: 100%;
     background: url($path + "bg.png");
     background-attachment:fixed;
+    @include animation(load, 2s, ease);
+}
+@keyframes load{
+    0% {@include rotateY(0deg);}
+    100% {@include rotateY(360eg);}
+}
+@-webkit-keyframes load{
+    0% {@include rotateY(0deg);}
+    100% {@include rotateY(360deg);}
+}
+@-moz-keyframes load{
+    0% {@include rotateY(0deg);}
+    100% {@include rotateY(360deg);}
+}
+
+@keyframes opacity{
+    0% {opacity: 0;}
+    75% {opacity: 0.1}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes opacity{
+    0% {opacity: 0;}
+    75% {opacity: 0.1}
+    100% {opacity: 1;}
+}
+@-moz-keyframes opacity{
+    0% {opacity: 0;}
+    75% {opacity: 0.1}
+    100% {opacity: 1;}
 }
