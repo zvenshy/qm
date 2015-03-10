@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+#main {
+    width: 790/1366*100%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    
+    ul {
+        width: 90%;
+        padding-top: 120px;
+        margin-left: 40px;
+    }
+
+    li {
+        width: 93%;
+        padding: 0 14px 11px;
+        margin-bottom: 60px;
+        border: 3px solid #4da76f;
+        @include radius(9px);
+        font: 12px/1.4 "宋体", sans-serif;
+        color: #404643;
+        background: #fff;
+        
+    }
+    
+    .point, .date {
+        position: absolute;
+    }
+    .point {
+        left: 4px;
+        width: 0;
+        height: 0;
+        margin-top: -20px;
+        border: 9px solid #48a56b;
+        @include radius(9px);
+
+    }
+
+    .date {
+        left: -36px;
+        margin-top: 50px;
+        color: #4da76f;
+    }
+    
+    .jiao {
+        position: relative;
+        left: -27px;
+        top: -3px;
+        width: 19px;
+        height: 13px;
+        background: url($path + 'jiao.png');
+    }
+
+    .time {
+        font: 18px/1.0 "宋体", sans-serif;
+        color: #5faf7e;
+        margin-top: -5px;
+        margin-right: 4px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+#timeline {
+    height: 100%;
+    position: fixed;
+    margin-top: 82px;
+}
+
+#yuan {
+    width: 26px;
+    height: 26px;
+    background: url($path + 'yuan.png');
+}
+
+#xian {
+    width: 1px;
+    height: 100%;
+    margin-left: 13px;
+    background: url($path + 'dash.png');
+}

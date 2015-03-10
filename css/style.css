@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* mobile highlinght */
+body {
+  -webkit-tap-highlight-color: transparent;
+  -ms-touch-action: none;
+  /* WP8 */ }
+
+body {
+  height: 100%;
+  background-color: #e57c30; }
+
+.fl {
+  float: left; }
+
+.clear {
+  clear: left; }
+
+.wrap {
+  display: inline-block; }
+
+#container {
+  width: 100%;
+  min-height: 100%;
+  background: url("../images/bg.png");
+  background-attachment: fixed; }
+
+header {
+  width: 100%;
+  height: 60px;
+  background: #e57c30;
+  text-align: center;
+  position: fixed;
+  z-index: 10; }
+
+#headDate {
+  font: 22px/1.0 "微软雅黑",sans-serif;
+  color: #fff;
+  padding-top: 29px;
+  display: none; }
+
+#title {
+  width: 70%;
+  max-width: 298px;
+  margin-top: 16px; }
+  #title img {
+    width: 100%; }
+
+#main {
+  width: 57.83309%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative; }
+  #main ul {
+    width: 90%;
+    padding-top: 120px;
+    margin-left: 40px; }
+  #main li {
+    width: 93%;
+    padding: 0 14px 11px;
+    margin-bottom: 60px;
+    border: 3px solid #4da76f;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    font: 12px/1.4 "宋体", sans-serif;
+    color: #404643;
+    background: #fff; }
+  #main .point, #main .date {
+    position: absolute; }
+  #main .point {
+    left: 4px;
+    width: 0;
+    height: 0;
+    margin-top: -20px;
+    border: 9px solid #48a56b;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px; }
+  #main .date {
+    left: -36px;
+    margin-top: 50px;
+    color: #4da76f; }
+  #main .jiao {
+    position: relative;
+    left: -27px;
+    top: -3px;
+    width: 19px;
+    height: 13px;
+    background: url("../images/jiao.png"); }
+  #main .time {
+    font: 18px/1.0 "宋体", sans-serif;
+    color: #5faf7e;
+    margin-top: -5px;
+    margin-right: 4px; }
+  #main img {
+    max-width: 100%; }
+
+#timeline {
+  height: 100%;
+  position: fixed;
+  margin-top: 82px; }
+
+#yuan {
+  width: 26px;
+  height: 26px;
+  background: url("../images/yuan.png"); }
+
+#xian {
+  width: 1px;
+  height: 100%;
+  margin-left: 13px;
+  background: url("../images/dash.png"); }

@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+$path: "../images/";
+
+
+body {
+    height: 100%;
+    background-color: #e57c30;
+}
+@mixin radius($px: 9px) {
+    -webkit-border-radius: $px;
+    -moz-border-radius: $px;
+    border-radius: $px;
+}
+
+.fl {
+    float: left;
+}
+.clear {
+    clear: left;
+}
+.wrap {
+    display: inline-block;
+}
+
+#container {
+    width: 100%;
+    min-height: 100%;
+    background: url($path + "bg.png");
+    background-attachment:fixed;
+}
